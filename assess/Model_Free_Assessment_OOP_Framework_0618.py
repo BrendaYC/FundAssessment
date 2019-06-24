@@ -14,7 +14,7 @@ df["DATE"] = pd.to_datetime(df['DATE'])
 
 class HF_Model_Free_Assessment():
     
-    rf_df = pd.read_csv("monthly_rf_rate.csv")
+    rf_df = pd.read_csv("datasets/monthly_rf_rate.csv")
     rf_df['DATE'] = pd.to_datetime(rf_df['DATE'])
     
     def __init__(self,date,performance,AUM):
